@@ -1,0 +1,18 @@
+{
+  "name": "appliweb",
+  "version": "1.0.0",
+  "description": "Intégration maquette OhMyFood!",
+  "main": "index.js",
+  "scripts": {
+    "sass":"sass --watch ./sass/main.scss:./public/css/styles.css" 
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    ""
+  ],
+  "author": "Contout Christopher-Lee",
+  "license": "ISC"
+}
