@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
+
+$roboto: 'Roboto', sans-serif;
+$Shrikhand: 'Shrikhand', sans-serif;
+
+.container_heading_titleIcone,.footer_title {
+    font-family: $Shrikhand;
+}
+body, i, a {
+    font-family: $roboto;
+}

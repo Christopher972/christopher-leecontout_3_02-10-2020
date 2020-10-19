@@ -1,0 +1,23 @@
+.header 
+{
+    padding:25px;
+    
+    &_link 
+    {
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        color:black
+    }
+
+    &_icone 
+    {
+        align-self:center;
+    }
+
+    &_logo 
+    {
+        padding-left:100px;
+        padding-right:100px;
+    }
+}

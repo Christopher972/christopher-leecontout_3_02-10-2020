@@ -1,0 +1,196 @@
+.homepageheader 
+{
+    &_logo 
+    {
+        text-align: center;
+    }    
+        
+
+    &_localisation 
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(to bottom, #CFCFCF, #EAEAEA 20%); 
+        padding: 20px 0;
+    }
+        &_localisation_icone 
+        {
+            padding-right: 15px;
+        }
+}
+
+.contenuhomepage 
+{
+    &_informations 
+    {
+        background-color: #F6F6F6;
+        padding: 45px 0;
+
+        &_title 
+        {
+            text-align: center;
+        }
+
+        &_paragraphe 
+        {
+            padding: 5px;
+            text-align: center;
+            opacity: 0.7;
+        }
+    } 
+    &_steps 
+    {
+        padding: 35px;
+
+        &_title 
+        {
+            margin: 25px;
+            font-size: 25px;
+        }
+
+        &_step 
+        {
+            display: flex;
+            padding: 15px;
+            align-items: center;
+
+            &_number 
+            {
+                transform: translate(10px, 0px);
+
+                &--rounded 
+                {
+                    height: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 40px;
+                    background: $colour-primary;
+                    width: 23px;
+                    color: $colour-quaternary;
+                    font-size: 15px;
+                }
+            }
+
+            &_iconeT
+            {
+                display: flex;
+                width: 100%;
+                background-color: #F6F6F6; 
+                box-shadow: 0 10px 10px 10px #E6E6E6;
+
+                &--rounded 
+                {
+                    padding: 20px;
+                    border-radius: 20px;
+                }
+                
+                &_icone 
+                {
+                    width: 60px;
+                    align-self: center;
+                    display: flex;
+                    justify-content: center;
+        
+                    &--grey 
+                    {
+                        color: #7E7E7E;
+                    }
+    
+                    &--purple 
+                    {
+                        color: $colour-primary;
+                    }
+                }
+            }
+        }    
+    }
+
+
+    &_restaurants 
+    {
+        background-color: #F6F6F6;
+        padding:30px;
+
+        &_title 
+        {
+          margin:45px;
+          font-size:25px;
+        }
+
+        &--flex
+        {
+            padding:35px;
+        }
+
+        &_links 
+        {
+        color: black;
+        }
+
+        &_card {
+            padding: 0px 5px;
+
+
+            &_imageText
+            {
+                margin:0px;
+                position: relative;
+
+                 &_image
+                {    
+                    width: 660px;
+                    border-top-right-radius: 20px;
+                    border-top-left-radius: 20px;
+                }
+
+                &_text 
+                {
+                    position: relative;
+                    width:80px;
+                    left: 50%;
+                    transform: translate(190px, -300px);
+                    background-color: $colour-tertiary;
+                    color: #008766;
+                    padding: 10px;
+                    border-radius: 3px;
+                    font-weight: bold;
+                    text-align:center;
+                }
+            }
+            &_informations
+            {
+                background-color: $colour-quaternary;
+                border-bottom-right-radius: 20px;
+                border-bottom-left-radius: 20px;
+                box-shadow: 0px 20px 20px #E6E6E6;
+                display: flex;
+                justify-content: space-between;
+                padding: 5%;
+                line-height:0;
+                transform: translate(0px,-15px);
+                
+                &_new
+                {
+                background-color: $colour-quaternary;
+                border-bottom-right-radius: 20px;
+                border-bottom-left-radius: 20px;
+                box-shadow: 0px 20px 20px #E6E6E6;
+                display: flex;
+                justify-content: space-between;
+                padding: 5%;
+                line-height:0;
+                transform: translate(0px,-45px); 
+                }
+                &_title
+                {   
+                    &_paragraphe
+                    {
+                        opacity: 0.6;
+                    }    
+                }
+            } 
+        }       
+    }  
+}
