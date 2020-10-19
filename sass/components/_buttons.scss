@@ -1,0 +1,29 @@
+.contenuhomepage_informations_button 
+{
+    text-align: center;
+    
+    &--rounded {
+        padding: 15px 25px;
+        border: none;
+        border-radius: 50px;
+        font-size:15px;
+    }
+
+    &--gradient {
+        @include lineargradient;
+    }
+}
+
+.container_button {
+        display: flex;
+        justify-content: center;
+        
+    &_text {
+        padding: 15px 55px;
+        border-radius: 20px;
+        border: none;
+        font-size:15px;
+        box-shadow: 0px 0px 58px 13px rgba(197,197,197,1);
+        @include lineargradient;
+    }
+}
