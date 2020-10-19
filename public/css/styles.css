@@ -1,4 +1,118 @@
+@charset "UTF-8";
+/*Animations de mes différents boutons*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+.contenuhomepage_informations_button--animation, .container_button_text {
+  cursor: pointer;
+  transition-property: box-shadow, opacity;
+  transition-duration: 500ms;
+}
+.contenuhomepage_informations_button--animation:hover, .container_button_text:hover {
+  opacity: 0.7;
+  box-shadow: 0px 0px 13px -1px #919191;
+}
+
+/*Animations icones coeurs*/
+@keyframes gradient {
+  0% {
+    color: #FFFFFF;
+  }
+  10% {
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 10%, #FFFFFF 0%);
+    -webkit-text-stroke-width: 0px;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  20% {
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 20%, #FFFFFF 10%);
+    -webkit-text-stroke-width: 0px;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  30% {
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 30%, #FFFFFF 20%);
+    -webkit-text-stroke-width: 0px;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  40% {
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 40%, #FFFFFF 30%);
+    -webkit-text-stroke-width: 0px;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  50% {
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 50%, #FFFFFF 40%);
+    -webkit-text-stroke-width: 0px;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  60% {
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 60%, #FFFFFF 50%);
+    -webkit-text-stroke-width: 0px;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  70% {
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 70%, #FFFFFF 60%);
+    -webkit-text-stroke-width: 0px;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  80% {
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 80%, #FFFFFF 70%);
+    -webkit-text-stroke-width: 0px;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  90% {
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 90%, #FFFFFF 80%);
+    -webkit-text-stroke-width: 0px;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  100% {
+    background: linear-gradient(0deg, #FF79DA 0%, #9356DC 100%);
+    -webkit-text-stroke-width: 0px;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
+.contenuhomepage_restaurants_card_informations_button_jauge, .container_heading_titleIcone_icone {
+  font-size: 25px;
+  color: #FFFFFF;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+.contenuhomepage_restaurants_card_informations_button_jauge:hover, .container_heading_titleIcone_icone:hover {
+  animation: gradient 1s;
+  animation-fill-mode: forwards;
+}
+
+/*Apparition progressive des plats*/
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.container_menu_entrees {
+  animation: fade-in 6s;
+}
+
+.container_menu_plats {
+  opacity: 0;
+  animation: fade-in 6s forwards;
+  animation-delay: 2s;
+}
+
+.container_menu_desserts {
+  opacity: 0;
+  animation: fade-in 6s forwards;
+  animation-delay: 3s;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -24,6 +138,34 @@ li {
 
 body, i, a {
   font-family: "Roboto", sans-serif;
+}
+
+.contenuhomepage_informations_button {
+  text-align: center;
+}
+.contenuhomepage_informations_button--rounded {
+  padding: 15px 25px;
+  border: none;
+  border-radius: 50px;
+  font-size: 15px;
+}
+.contenuhomepage_informations_button--gradient {
+  background: linear-gradient(to bottom, #FF79DA, #9356DC);
+  color: #FFFFFF;
+}
+
+.container_button {
+  display: flex;
+  justify-content: center;
+}
+.container_button_text {
+  padding: 15px 55px;
+  border-radius: 20px;
+  border: none;
+  font-size: 15px;
+  box-shadow: 0px 0px 58px 13px #c5c5c5;
+  background: linear-gradient(to bottom, #FF79DA, #9356DC);
+  color: #FFFFFF;
 }
 
 .homepageheader_logo {

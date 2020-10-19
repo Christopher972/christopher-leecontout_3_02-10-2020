@@ -2,23 +2,27 @@
 {
     text-align: center;
     
-    &--rounded {
+    &--rounded 
+    {
         padding: 15px 25px;
         border: none;
         border-radius: 50px;
         font-size:15px;
     }
 
-    &--gradient {
+    &--gradient 
+    {
         @include lineargradient;
     }
 }
 
-.container_button {
+.container_button 
+{
         display: flex;
         justify-content: center;
         
-    &_text {
+    &_text 
+    {
         padding: 15px 55px;
         border-radius: 20px;
         border: none;
