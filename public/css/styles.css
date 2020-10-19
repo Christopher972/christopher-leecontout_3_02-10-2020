@@ -78,14 +78,39 @@
   }
 }
 .contenuhomepage_restaurants_card_informations_button_jauge, .container_heading_titleIcone_icone {
+  font-size: 25px;
   color: #FFFFFF;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
 }
 .contenuhomepage_restaurants_card_informations_button_jauge:hover, .container_heading_titleIcone_icone:hover {
-  font-size: 20px;
   animation: gradient 1s;
   animation-fill-mode: forwards;
+}
+
+/*Apparition progressive des plats*/
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.container_menu_entrees {
+  animation: fade-in 6s;
+}
+
+.container_menu_plats {
+  opacity: 0;
+  animation: fade-in 6s forwards;
+  animation-delay: 2s;
+}
+
+.container_menu_desserts {
+  opacity: 0;
+  animation: fade-in 6s forwards;
+  animation-delay: 3s;
 }
 
 body {
@@ -356,6 +381,7 @@ body, i, a {
 .container_menu_informations_heading {
   padding: 15px;
   line-height: 0;
+  width: 80%;
 }
 .container_menu_informations_heading_title {
   font-size: 13px;
@@ -367,12 +393,13 @@ body, i, a {
 }
 .container_menu_informations_price {
   align-self: flex-end;
-  margin-left: 55%;
 }
 .container_menu_informations_price_paragraphe {
   font-size: 15px;
   font-weight: bold;
-  margin-left: 100%;
+}
+.container_menu_informations_animation {
+  align-self: flex-end;
 }
 .container_button {
   margin: 0;
