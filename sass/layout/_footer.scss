@@ -1,0 +1,38 @@
+
+.footer 
+{
+    background-color: #353535;
+    padding: 10px;
+
+    &_title 
+    {
+        padding-left: 38px;
+        color: $colour-quaternary;
+        opacity: 0.9;
+        font-size: 23px;
+    }
+
+    &_li_wrap 
+    {
+    display:flex;
+    margin-bottom:10px;
+    color: $colour-quaternary;
+    }  
+
+    &_text
+    {
+        margin-bottom: 8px;
+        color: $colour-quaternary;
+    
+        &_icon
+        {
+            padding-left:15px;
+            color: $colour-quaternary;
+        }
+        &_icon2
+        {
+            padding-left:9px;
+            color: $colour-quaternary;
+        }
+    }
+}
