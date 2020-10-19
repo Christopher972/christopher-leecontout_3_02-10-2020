@@ -111,3 +111,36 @@
         animation-fill-mode: forwards;
     }
 }
+
+/*Apparition progressive des plats*/
+
+@keyframes fade-in 
+{
+    0% 
+    {
+        opacity: 0;
+    }
+    100% 
+    {
+        opacity: 1;
+    }
+}
+
+.container_menu_entrees
+{
+    animation: fade-in 6s;
+}
+
+.container_menu_plats 
+{
+    opacity: 0;
+    animation: fade-in 6s forwards;
+    animation-delay: 2s;
+}
+
+.container_menu_desserts 
+{
+    opacity: 0;
+    animation: fade-in 6s forwards;
+    animation-delay: 3s;
+}
