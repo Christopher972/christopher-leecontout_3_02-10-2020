@@ -1,0 +1,4 @@
+@mixin lineargradient {
+    background: linear-gradient(to bottom, #FF79DA, #9356DC );
+    color: $colour-quaternary;
+}
