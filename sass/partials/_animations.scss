@@ -10,3 +10,104 @@
         box-shadow: 0px 0px 13px -1px rgba(145,145,145,1);
     }
 }
+
+/*Animations icones coeurs*/
+@keyframes gradient {
+    0% 
+    {
+        color: $colour-quaternary;
+    }
+    10% 
+    {
+        background: linear-gradient(0deg, $colour-secondary 0%, $colour-primary 10%, $colour-quaternary 0%);
+        -webkit-text-stroke-width: 0px;
+        -webkit-background-clip: text;
+        color:transparent;
+       
+    }
+    20% 
+    {
+        background: linear-gradient(0deg, $colour-secondary 0%, $colour-primary 20%, $colour-quaternary 10%);
+        -webkit-text-stroke-width: 0px;
+        -webkit-background-clip: text;
+        color:transparent;
+       
+    }
+    30% 
+    {
+        background: linear-gradient(0deg, $colour-secondary 0%, $colour-primary 30%, $colour-quaternary 20%);
+        -webkit-text-stroke-width: 0px;
+        -webkit-background-clip: text;
+        color:transparent;
+        
+    }
+    40% 
+    {
+        background: linear-gradient(0deg, $colour-secondary 0%, $colour-primary 40%, $colour-quaternary 30%);
+        -webkit-text-stroke-width: 0px;
+        -webkit-background-clip: text;
+        color:transparent;
+       
+    }
+    50% 
+    {
+        background: linear-gradient(0deg, $colour-secondary 0%, $colour-primary 50%, $colour-quaternary 40%);
+        -webkit-text-stroke-width: 0px;
+        -webkit-background-clip: text;
+        color:transparent;
+       
+    }
+    60% 
+    {
+        background: linear-gradient(0deg, $colour-secondary 0%, $colour-primary 60%, $colour-quaternary 50%);
+        -webkit-text-stroke-width: 0px;
+        -webkit-background-clip: text;
+        color:transparent;
+        
+    }
+    70% 
+    {
+        background: linear-gradient(0deg, $colour-secondary 0%, $colour-primary 70%, $colour-quaternary 60%);
+        -webkit-text-stroke-width: 0px;
+        -webkit-background-clip: text;
+        color:transparent;
+    }
+    80% 
+    {
+        background: linear-gradient(0deg, $colour-secondary 0%, $colour-primary 80%, $colour-quaternary 70%);
+        -webkit-text-stroke-width: 0px;
+        -webkit-background-clip: text;
+        color:transparent;
+        
+    }
+    90% 
+    {
+        background: linear-gradient(0deg, $colour-secondary 0%, $colour-primary 90%, $colour-quaternary 80%);
+        -webkit-text-stroke-width: 0px;
+        -webkit-background-clip: text;
+        color:transparent;
+        
+    }
+    100% 
+    {
+        background: linear-gradient(0deg, $colour-secondary 0%, $colour-primary 100%);
+        -webkit-text-stroke-width: 0px;
+        -webkit-background-clip: text;
+        color:transparent;
+        
+    }
+}
+
+.contenuhomepage_restaurants_card_informations_button_jauge, .container_heading_titleIcone_icone 
+{
+    font-size: 25px;
+    color: $colour-quaternary;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+
+    &:hover 
+    {
+        animation: gradient 1s;
+        animation-fill-mode: forwards;
+    }
+}
