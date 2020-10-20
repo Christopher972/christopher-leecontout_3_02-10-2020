@@ -1,0 +1,131 @@
+/*Mise en page Responsive Page d'acceuil*/
+@media screen and (max-width:800px)
+{
+    #conteneur
+    {
+     width: 100%;
+     margin: 0;
+     padding: 0;
+     border: none;
+    } 
+    
+    .homepageheader_logo
+    {
+            &_logo
+        {
+            width: 50%;
+        }
+    }
+    .contenuhomepage
+    {
+        &_steps
+        {
+            padding: 10px;
+        
+            &_step_iconeT--rounded
+            {
+                padding: 0px;
+            }
+        }
+        &_restaurants
+        {
+            padding:10px;
+
+            &_title
+            {
+                margin: 30px; 
+            }
+
+            &--flex
+            {
+                padding:0px;
+            }
+            
+
+            &_card_imageText
+            {
+                &_image
+                {
+                    width: 100%;
+                    position: relative;
+                    bottom: 22px;
+                    
+                    &_new
+                    {
+                        width: 100%;
+                        position: relative;
+                       
+                    }
+                }
+                &_text 
+                {
+                    position: relative;
+                    width:20%;
+                    left: 50%;
+                    transform: translate(80px, -165px);
+                    background-color: $colour-tertiary;
+                    color: #008766;
+                    padding: 5px;
+                    border-radius: 3px;
+                    font-weight: bold;
+                    text-align:center;
+                }
+            }
+            &_card_informations
+            {
+                display: flex;   
+            }    
+            &_card_informations_button_jauge
+            {
+                transform: translate(0px, 10px);
+            }       
+        }
+    }
+    .footer_title, ul 
+    {
+        padding-left: 8px;
+    }
+}    
+
+/*Mise en page Responsive Menus */
+
+@media screen and (max-width:800px)
+{
+    .header
+    {
+        padding: 0px;
+        
+        &_logo_logo
+        {
+            width: 150px;
+        }
+    }
+    .container
+    {
+        &_heading
+        {
+            &_photo
+            {
+                width: 100%;
+                left: 0;
+            }
+            &_titleIcone
+            {
+                &_icone
+                {
+                    width: 70px;
+                    padding-left: 12%;
+                }
+            }
+        }
+        &_menu
+        {
+            padding: 0px;
+
+            &_title::after
+            {
+             width: 11%;
+            }
+        }
+    }
+}   
