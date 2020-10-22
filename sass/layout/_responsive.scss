@@ -94,10 +94,24 @@
     .header
     {
         padding: 0px;
-        
-        &_logo_logo
+
+        &_icone
         {
+            position: relative;
+            top: 10px;
+        }
+        &_logo
+        {
+            position: relative;
+            top: 10px;
+            margin: 0;
+            padding-left: 80px;
+            padding-right: 80px;
+
+            &_logo
+            {
             width: 150px;
+            }
         }
     }
     .container
