@@ -4,7 +4,7 @@
     {
         &_photo 
         {
-            width:720px ;
+            width:700px ;
             position: absolute;
         }
 
@@ -73,18 +73,15 @@
             box-shadow: 0px 0px 10px 10px rgba(233,233,233,1);
             border-radius: 15px;
             cursor: pointer;
+            padding: 7px;
 
             &_heading 
             {
-                padding: 15px;
-                line-height:0;
                 width:80%;
-                
                 
                 &_title 
                 {
                     font-size: 13px;
-                    padding-bottom:3%;
                 }
 
                 &_paragraphe 
@@ -105,9 +102,8 @@
                     font-weight: bold;    
                 }
             }
-        }
+        }   
     }
-
     &_button 
     {
         margin: 0;
