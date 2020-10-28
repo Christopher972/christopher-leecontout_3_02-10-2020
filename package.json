@@ -4,7 +4,7 @@
   "description": "Intégration maquette OhMyFood!",
   "main": "index.js",
   "scripts": {
-    "sass":"sass --watch ./sass/main.scss:./public/css/styles.css" 
+    "sass":"sass --watch ./sass/main.scss:./public/css/styles.css --style compressed" 
   },
   "repository": {
     "type": "git",
